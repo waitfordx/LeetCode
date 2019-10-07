@@ -10,7 +10,7 @@ private:
     char* ptr;
 public:
     // 构造函数,
-    my_string(char* p = "")
+    my_string(const char* p = nullptr)
     {
         if(p == nullptr)
         {
@@ -57,5 +57,5 @@ public:
 int main()
 {
     my_string a("abc");
-    cout<< a;
+    return 0;
 }
